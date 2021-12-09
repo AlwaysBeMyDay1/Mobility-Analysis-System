@@ -1,0 +1,25 @@
+extends base
+block script 
+    script(type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=26b4506d2c4f778a27660d8b99da45cf")
+block content 
+    main 
+        div.home-btns
+            button.drive-btn 주행 시작
+        div
+            div 위도 : 
+                span.latitude
+            div 경도 : 
+                span.longitude
+        br
+        div 현재 속력 : 60.8 km
+            span.current-speed
+        
+        div 최근 경로 : 
+            span.recent-route 영남대학교 ➡️ 반월당역
+        br
+        div 현재 위치 : 
+            span.current-pos
+        div#map(style="width:600px; height:400px")
+        
+block scripts 
+    script(src="/assets/js/path.js")

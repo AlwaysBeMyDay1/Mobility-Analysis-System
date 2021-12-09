@@ -1,24 +1,24 @@
 extends base
-block script
-    script(type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=26b4506d2c4f778a27660d8b99da45cf")
 block content 
     main
-        h1 U in Mobil
-        div.home-btns
-            button.drive-btn 주행 시작
-        br
-        div 현위치 : 
-            span.current-pos
         div
-            div 위도 : 
-                span.latitude
-            div 경도 : 
-                span.longitude
-        div 현재 속력 : 
-            span.current-speed
-        div 최근 경로 : 
-            span.recent-route
-        div#map(style="width:600px; height:400px")
-
-block scripts 
-    script(src="/assets/js/home.js")
+            h2 나의 운전 점수 :    
+                span#my-score 78점
+        br
+        div
+            h3 1600km당 전방 충돌 경고 횟수 : 
+                span#num-alert-crash 12 회
+        div
+            h3 차량 급선회 횟수 : 
+                span#num-sharp-turn 6 회
+        div
+            h3 브레이크 급제동 횟수 : 
+                span#num-sharp-brake 3 회 
+        div
+            h3 안전 거리 미확보 횟수 : 
+                span#num-non-secured 15 회
+        div
+            h3 오토파일럿 강제 이탈 횟수 : 
+                span#num-depart-ap 8 회
+        br
+        

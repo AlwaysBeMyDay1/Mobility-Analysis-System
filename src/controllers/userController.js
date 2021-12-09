@@ -1,3 +1,3 @@
-export const getJoin = (req, res) => {
-  return res.render("home");
+export const getPath = (req, res) => {
+  return res.render("path", { pageTitle: "최근 경로" });
 };
